@@ -1,10 +1,10 @@
 local src = require(workspace.ModuleScript) -- Put source here
 
 local tests = {
-	{{"If you got a gun up in your waist please don't shoot up the place (why?)"}, {"hiphop"}},
-	{{"Ou va le monde?"}, "french"},
-	{{"My other car is a cdr."}, {"hiphop"}},
-	{{"defun Let there be rock"}, {"lisp"}}
+	{"If you got a gun up in your waist please don't shoot up the place (why?)", "hiphop"},
+	{"Ou va le monde?", "french"},
+	{"My other car is a cdr.", "hiphop"},
+	{"defun Let there be rock", "lisp"}
 }
 
 function tableToString(tbl)
