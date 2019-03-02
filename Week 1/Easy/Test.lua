@@ -1,9 +1,9 @@
 local src = require(workspace.ModuleScript) -- Put source here
 
 local tests = {
-	{{{"Rurudu", "Kodran", "Josh"}, "Rurudu"}, "Rurudu"},
-	{{{"Alex"}, "Alex"}, "Alex"},
-	{{{"Kim", "Jimmy", "Catherine", "Nick", "Daniel", "David"}, "David"}, "David"}
+	{{{"Rurudu", "Kodran", "Josh"}, "Rurudu"}, 1},
+	{{{"Alex"}, "Alex"}, 1},
+	{{{"Kim", "Jimmy", "Catherine", "Nick", "Daniel", "David"}, "David"}, 6}
 }
 
 function tableToString(tbl)
