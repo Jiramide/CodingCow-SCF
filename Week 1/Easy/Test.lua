@@ -46,8 +46,8 @@ for i,v in pairs(tests) do
 	local numInputs = #input
 	if type(expectedOutput) == "table" then
 		for i,v in pairs(expectedOutput) do
-			if not RunTest(input, expectedOutput[i]) then
-				return false
+			if RunTest(input, expectedOutput[i]) then
+				print("Passed case #"..i)
 			end
 		end
 	else
