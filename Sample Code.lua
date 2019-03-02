@@ -4,7 +4,7 @@ function anotherFunction(a,b) --
 	return a,b
 end
 
--- Do NOT edit below for proper functionality with provided test cases
+-- Do NOT remove the main function, but you can change what is in the function.
 
 function main(input) -- The function called in the test case
 	--Do stuff
