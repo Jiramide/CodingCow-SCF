@@ -69,7 +69,8 @@ A string that is one of the potential languages.
 
 ## Output
 String representing which language the input most likely is.
-**The string must be same name as the corresponding corpus file
+
+**The string must be same name as the corresponding corpus file**
 
 
 **Sample Input**
