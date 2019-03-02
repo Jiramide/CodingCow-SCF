@@ -48,6 +48,12 @@ function tableEquals(a, b)
 			return false
 		end
 	end
+	for i,v in pairs(b) do
+		if (a[i] and v == a[i]) then
+		else
+			return false
+		end
+	end
 	return true
 end
 
