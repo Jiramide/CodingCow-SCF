@@ -46,7 +46,7 @@ for i,v in pairs(tests) do
 	local numInputs = #input
 	if type(expectedOutput) == "table" then
 		for i,v in pairs(expectedOutput) do
-			if RunTest(input, expectedOutput[i]) then
+			if not RunTest(input, expectedOutput[i]) then
 				return false
 			end
 		end
