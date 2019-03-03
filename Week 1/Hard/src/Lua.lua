@@ -17,9 +17,7 @@ local function CreateMarkovRow(Content, Letter)
 
   -- Normalization
   for Next, Occurances in pairs(Row) do
-    -- Fills in 0.01 so that probability doesn't get completely
-    -- 0'd out because of something the corpus didn't account for.
-    Row[Next] = math.max(Occurances/Count, 0.01)
+    Row[Next] = Occurances/Count
   end
 
   return Row
