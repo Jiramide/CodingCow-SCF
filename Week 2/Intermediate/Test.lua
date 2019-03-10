@@ -1,4 +1,4 @@
-local src = require(workspace.ModuleScript) -- Put source here
+local src = require("Week 2.Intermediate.src.Lua") -- Put source here
 
 local tests = {
 	{"4a6f73682069732061207265616c6c7920636f6f6c20677579", "Josh is a really cool guy"},
