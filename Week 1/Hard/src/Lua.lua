@@ -30,7 +30,10 @@ local function CreateMarkovChain(Content)
 
   for Idx = 1, #Content do
     local Letter = Content:sub(Idx, Idx)
-    MarkovChain[Letter] = CreateMarkovRow(Content, Letter)
+
+    if not MarkovChain[Letter] then
+      MarkovChain[Letter] = CreateMarkovRow(Content, Letter)
+    end
   end
 
   return MarkovChain
