@@ -13,7 +13,7 @@ toHex = Mayb.fromMaybe 0 . flip List.elemIndex "0123456789ABCDEF" . Char.toUpper
 everyN :: Int -> ([a] -> b) -> [a] -> [b]
 everyN _ _ [] = []
 everyN n f xs = f t : everyN n f d
-    where (t, d) = splitAt n xs
+  where (t, d) = splitAt n xs
 
 decodeMsg :: String -> String
 decodeMsg = everyN 2 (\[a, b] -> toEnum $ 16 * toHex a + toHex b)
